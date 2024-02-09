@@ -8,14 +8,19 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
-      <Cursor />
-      <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
-      <Footer />
+      <div className="relative">
+        <Cursor />
+        <Header />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Router>
+        <div className="absolute w-full ">
+          {" "}
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

@@ -14,9 +14,8 @@ function BookItem({ book }) {
   console.log(bookData);
 
   return (
-    <div className="card bg-gray-900 shadow-xl m-2 mt-10">
+    <div className="card bg-gray-900 shadow-xl m-2 mt-10 text-white">
       <figure>
-        {/* Use coverImage for src */}
         <img src={coverImage} alt={bookData.title} className="rounded mt-8" />
       </figure>
       <div className="card-body">
